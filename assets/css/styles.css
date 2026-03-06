@@ -419,13 +419,18 @@ h4 {
   padding: 1.5rem 3.5rem;
 }
 .gallery__figure {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
+
 .gallery__figure img {
-  width: min(900px, 100%);
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border-radius: 1rem;
+  width: auto;            
+  max-width: 100%;         
+  max-height: min(70vh, 620px);
+  height: auto;
+  object-fit: contain;   
+  aspect-ratio: auto;     
+  background: #f5efe7;    
 }
 .gallery__figure figcaption {
   margin-top: 0.75rem;
