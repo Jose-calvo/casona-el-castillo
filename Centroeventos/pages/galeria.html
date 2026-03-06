@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto · Casona Fundo El Castillo</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="/" class="navbar__logo">Casona Fundo El Castillo</a>
+    <button class="navbar__toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="navbar__menu">
+      <a href="../index.html">Inicio</a>
+      <a href="quienes-somos.html">Ubicación</a>
+      <a href="ubicacion.html">Ubicación</a>
+      <a class="is-active" href="galeria.html">Galería</a>
+      <a href="menu.html">Menú</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+    <main>
+    <section class="gallery" id="galeria">
+        <div class="gallery__container">
+        <div class="gallery__intro">
+            <p class="gallery__eyebrow">Colección visual</p>
+            <h1>Momentos en Casona Fundo El Castillo</h1>
+            <p>Una selección cuidada de nuestros espacios, jardines y rincones emblemáticos. Usa las flechas o las miniaturas para navegar.</p>
+        </div>
+
+        <div class="gallery__viewer" aria-live="polite">
+            <button class="gallery__arrow gallery__arrow--prev" type="button" aria-label="Ver imagen anterior" data-gallery-prev>
+            <span>&larr;</span>
+            </button>
+
+            <figure class="gallery__figure">
+            <img
+                data-gallery-current
+                src="../assets/img/hero.jpg"
+                alt="Jardines principales y fachada de la casona"
+            />
+            <figcaption data-gallery-caption>Jardines principales en primavera</figcaption>
+            </figure>
+
+            <button class="gallery__arrow gallery__arrow--next" type="button" aria-label="Ver imagen siguiente" data-gallery-next>
+            <span>&rarr;</span>
+            </button>
+        </div>
+
+        <div class="gallery__strip" role="tablist" aria-label="Miniaturas de la galería">
+            <button
+            class="gallery__thumb is-active"
+            type="button"
+            role="tab"
+            aria-selected="true"
+            data-gallery-thumb
+            data-src="../assets/img/hero.jpg"
+            data-alt="Jardines principales y fachada de la casona"
+            data-caption="Jardines principales en primavera"
+            >
+            <img src="../assets/img/hero.jpg" alt="Miniatura jardines principales" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/quienes-somos.jpg"
+            data-alt="Interior de salón con montaje de bodas"
+            data-caption="Montaje de salón principal"
+            >
+            <img src="../assets/img/quienes-somos.jpg" alt="Miniatura salón principal" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/ubicacion.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/ubicacion.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img2.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img2.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img3.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img3.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img4.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img4.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img5.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img5.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img6.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img6.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img7.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img7.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img8.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img8.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img9.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img9.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img10.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img10.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img11.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img11.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img12.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img12.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img13.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img13.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img15.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img15.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img16.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img16.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img17.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img17.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img18.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img18.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img19.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img19.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img20.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img20.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img21.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img21.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img22.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img22.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img23.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img23.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img24.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img24.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img25.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img25.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img26.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img26.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img27.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img27.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img28.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img28.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img29.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img29.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img30.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img30.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img31.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img31.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img33.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img33.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img35.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img35.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img36.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img36.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img37.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img37.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img38.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img38.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img39.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img39.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img40.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img40.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img41.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img41.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img42.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img42.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img43.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img43.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img44.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img44.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img45.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img45.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img46.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img46.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img47.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img47.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img48.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img48.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img49.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img49.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img50.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img50.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img51.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img51.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img52.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img52.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img53.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img53.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img54.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img54.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+
+            <button
+            class="gallery__thumb"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-gallery-thumb
+            data-src="../assets/img/img55.jpg"
+            data-alt="Vista aérea del parque y alrededores"
+            data-caption="Vista aérea del parque"
+            >
+            <img src="../assets/img/img55.jpg" alt="Miniatura vista aérea del parque" />
+            </button>
+        </div>
+        </div>
+    </section>
+    </main>
+
+
+  <footer class="footer">
+    <small>&copy; 2026 Casona Fundo El Castillo.</small>
+  </footer>
+
+  <script src="../assets/js/main.js" defer></script>
+
+  <script>
+    function mostrarMensaje() {
+      const mensaje = document.getElementById('mensaje-exito');
+
+      setTimeout(() => {
+        document.querySelector('.form').reset();
+        mensaje.style.display = 'block';
+      }, 500);
+    }
+  </script>
+
+</body>
+</html>

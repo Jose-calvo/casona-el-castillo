@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto · Casona Fundo El Castillo</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="/" class="navbar__logo">Casona Fundo El Castillo</a>
+    <button class="navbar__toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="navbar__menu">
+      <a href="../index.html">Inicio</a>
+      <a href="quienes-somos.html">Quiénes Somos</a>
+      <a href="ubicacion.html">Ubicación</a>
+      <a href="galeria.html">Galería</a>
+      <a href="menu.html">Menú</a>
+      <a class="is-active" href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-hero">
+      <h1>Coordinemos tu evento</h1>
+      <p>Cuéntanos la fecha, número de invitados y el estilo soñado.</p>
+    </section>
+
+    <section class="contact-grid">
+      
+      <!-- FORMULARIO CONECTADO A GOOGLE FORMS -->
+      <form 
+        class="form"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSc-UTSCsYmPvigitThKdSBc2pXMQjB62hQy5cB36yLv8Myf8g/formResponse"
+        method="POST"
+        target="hidden_iframe"
+        onsubmit="mostrarMensaje()"
+      >
+
+        <label>Nombre
+          <input type="text" name="entry.519077465" required />
+        </label>
+
+        <label>Correo electrónico
+          <input type="email" name="entry.616392886" required />
+        </label>
+
+        <label>Mensaje
+          <textarea name="entry.1778128583" rows="5" required></textarea>
+        </label>
+
+        <button class="btn btn--primary" type="submit">
+          Enviar solicitud
+        </button>
+
+        <!-- MENSAJE DE ÉXITO -->
+        <p id="mensaje-exito" class="mensaje-exito">
+          ✅ Gracias por contactarnos. Te responderemos pronto.
+        </p>
+
+      </form>
+
+      <!-- iframe oculto para evitar redirección -->
+      <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+      <div class="contact-info">
+        <h2>Contacto directo</h2>
+        <p>+56 9 9779 4301</p>
+        <p>casonaelcastillo1933@gmail.com</p>
+        <p>Casona Fundo El Castillo, Chile</p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>&copy; 2026 Casona Fundo El Castillo.</small>
+  </footer>
+
+  <script src="../assets/js/main.js" defer></script>
+
+  <script>
+    function mostrarMensaje() {
+      const mensaje = document.getElementById('mensaje-exito');
+
+      setTimeout(() => {
+        document.querySelector('.form').reset();
+        mensaje.style.display = 'block';
+      }, 500);
+    }
+  </script>
+
+</body>
+</html>
